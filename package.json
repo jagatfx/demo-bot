@@ -4,7 +4,7 @@
   "description": "Demo for client",
   "main": "index.js",
   "engines": {
-    "node": ">= 6.1 < 9"
+    "node": ">= 8.2 < 9"
   },
   "dependencies": {
     "@botpress/audience": "10.30.0",
@@ -12,7 +12,7 @@
     "@botpress/channel-web": "10.30.0",
     "@botpress/hitl": "10.30.0",
     "@botpress/nlu": "10.30.0",
-    "@botpress/qna": "^10.28.0",
+    "@botpress/qna": "^10.30.0",
     "@botpress/skill-choice": "10.30.0",
     "botpress": "10.30.0",
     "jsdoc-api": "^4.0.3",
