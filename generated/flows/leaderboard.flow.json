@@ -1,0 +1,21 @@
+{
+  "version": "0.1",
+  "catchAll": {},
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "29f75b0dc3",
+      "name": "entry",
+      "onEnter": [
+        "renderLeaderboard {}"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "main.flow.json"
+        }
+      ]
+    }
+  ]
+}

@@ -45,6 +45,12 @@ module.exports = async bp => {
   /// Conversation Management
   ////////////////////////////
 
+  bp.hear(/\/forget/i, async (event, next) => {
+    await bp.users.untag(event.user.id, 'nickname')
+    await event.bp.kvs.set('leaderboard', [])
+    // By not calling next() here, we "swallow" the event (won't be processed by the dialog engine below)
+  })
+
   // All events that should be processed by the Flow Manager
   bp.hear({ type: /bp_dialog_timeout|text|message|quick_reply/i }, (event, next) => {
     bp.dialogEngine.processMessage(event.sessionId || event.user.id, event).then()

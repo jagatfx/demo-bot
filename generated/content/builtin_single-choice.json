@@ -104,5 +104,28 @@
     },
     "createdBy": "admin",
     "createdOn": "2018-08-09T14:56:47.327Z"
+  },
+  {
+    "id": "builtin_single-choice-at_20u",
+    "formData": {
+      "text": "What do you want to do?",
+      "choices": [
+        {
+          "title": "Play Trivia Game",
+          "value": "play"
+        },
+        {
+          "title": "See Leaderboard",
+          "value": "leaderboard"
+        },
+        {
+          "title": "Ask Questions",
+          "value": "ask"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-01T14:17:14.117Z"
   }
 ]

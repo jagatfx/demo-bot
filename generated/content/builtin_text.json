@@ -106,7 +106,7 @@
   {
     "id": "builtin_text-TXfdDI",
     "formData": {
-      "text": "OK Hello. I'm Mr. Press, but you can call me Bot.  Not Bob, Bot.",
+      "text": "OK Hello. I'm Mr. Press, but you can call me Bot. ",
       "typing": true
     },
     "createdBy": "admin",
@@ -115,7 +115,7 @@
   {
     "id": "builtin_text-~kfCS3",
     "formData": {
-      "text": "I am a simple demo that allows you to look behind the scenes at how I was made",
+      "text": "I am a simple demo",
       "typing": true
     },
     "createdBy": "admin",
@@ -151,7 +151,7 @@
   {
     "id": "builtin_text-SJ6h3l",
     "formData": {
-      "text": "Greate!",
+      "text": "Great!",
       "typing": true
     },
     "createdBy": "admin",
@@ -192,5 +192,14 @@
     },
     "createdBy": "admin",
     "createdOn": "2018-08-09T15:39:21.360Z"
+  },
+  {
+    "id": "builtin_text-pfJwh9",
+    "formData": {
+      "text": "Let the games begin. I'll ask you questions and you answer them as quickly as you can.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-09-01T14:20:43.022Z"
   }
 ]

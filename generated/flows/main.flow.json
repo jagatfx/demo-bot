@@ -1,7 +1,7 @@
 {
   "version": "0.1",
   "catchAll": {},
-  "startNode": "node-28c2",
+  "startNode": "intro-choice",
   "nodes": [
     {
       "id": "07ed24c0de",
@@ -42,6 +42,34 @@
         "say #!builtin_single-choice-umTBq3"
       ],
       "onReceive": []
+    },
+    {
+      "id": "skill-97cfb4",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "intro-choice",
+      "flow": "skills/choice-97cfb4.flow.json",
+      "next": [
+        {
+          "condition": "state['skill-choice-ret'] == \"play\"",
+          "node": "trivia.flow.json"
+        },
+        {
+          "condition": "state['skill-choice-ret'] == \"leaderboard\"",
+          "node": "leaderboard.flow.json"
+        },
+        {
+          "caption": "User picked [ask]",
+          "condition": "state['skill-choice-ret'] == \"ask\"",
+          "node": "node-28c2"
+        },
+        {
+          "condition": "true",
+          "node": "#"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
     }
   ]
 }
